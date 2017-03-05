@@ -24,6 +24,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
     }
+
     public void learn(View view) {
         Intent intent = new Intent(this, LearnActivity.class);
 

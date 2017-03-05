@@ -11,6 +11,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,6 +19,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class LearnActivity extends AppCompatActivity {
 
@@ -160,5 +166,22 @@ public class LearnActivity extends AppCompatActivity {
             }
             return null;
         }
+    }
+
+    public void displaySavedData(){
+        BufferedReader reader;
+
+        try{
+            final InputStream file = getAssets().open("saved_data.txt");
+            reader = new BufferedReader(new InputStreamReader(file));
+            String line = reader.readLine();
+            while(line != null){
+                Log.d("StackOverflow", line);
+                line = reader.readLine();
+            }
+        } catch(IOException ioe){
+            ioe.printStackTrace();
+        }
+
     }
 }
