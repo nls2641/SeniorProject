@@ -16,9 +16,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".DisplayTranslatedActivity" />
+        <activity android:name=".ViewSavedActivity" />
         <activity
-            android:name=".LearnActivity"
-            android:label="@string/title_activity_learn"
+            android:name=".FlashcardsActivity"
+            android:label="@string/title_activity_flashcards"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QuizzesActivity"
+            android:label="@string/title_activity_quizzes"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

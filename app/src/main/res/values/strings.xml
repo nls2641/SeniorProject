@@ -1,10 +1,15 @@
 <resources>
     <string name="app_name">Essle</string>
-    <string name="learn_button">Learn!</string>
+    <string name="viewsaved_button">View Saved Phrases</string>
+    <string name="flashcards_button">Flashcards</string>
+    <string name="quiz_button">Quizzes</string>
     <string name="enter_message">Enter text here</string>
     <string name="translate_button">Translate!</string>
     <string name="title_activity_learn">LearnActivity</string>
     <string name="save_button">Save!</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_view_saved">ViewSavedActivity</string>
+    <string name="title_activity_flashcards">FlashcardsActivity</string>
+    <string name="title_activity_quizzes">QuizzesActivity</string>
 </resources>
