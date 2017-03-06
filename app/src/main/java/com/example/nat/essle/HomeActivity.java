@@ -25,5 +25,11 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
+    public void viewSaved(View view){
+        Intent intent = new Intent(this, ViewSavedActivity.class);
+
+        startActivity(intent);
+    }
+
 
 }
